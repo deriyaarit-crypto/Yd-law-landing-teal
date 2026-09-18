@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>עורכת דין יערית דרעי | פלילי ונפגעי עבירה</title>
-<meta name="description" content="עורכת דין יערית דרעי — ייצוג משפטי בתחומי הפלילי, נפגעי עבירה, רישוי נשק, חנינות וועדות שחרורים. עבר כקצינה וכתובעת במשטרת ישראל.">
+<meta name="description" content="עורכת דין יערית דרעי - ייצוג משפטי בתחומי הפלילי, נפגעי עבירה, רישוי נשק, חנינות וועדות שחרורים. עבר כקצינה וכתובעת במשטרת ישראל.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,7 +99,13 @@
     .menu-toggle{ display:flex; width:42px; height:42px; border-radius:12px; align-items:center; justify-content:center; border:1.5px solid var(--line-2); background:transparent; color:var(--ink); }
     .header-actions .icon-btn.email-btn{ display:none; }
   }
-  @media (max-width:480px){ .header-actions .btn{ display:none; } }
+  @media (max-width:480px){
+    .header-actions .whatsapp-header-btn{
+      padding:0 !important; width:42px; height:42px; border-radius:50%;
+      gap:0;
+    }
+    .header-actions .whatsapp-header-btn .btn-label{ display:none; }
+  }
 
   #mobile-nav{ position:fixed; inset:0; z-index:99; background:var(--bg); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px; opacity:0; pointer-events:none; transition:opacity 280ms var(--ease-out); }
   #mobile-nav.open{ opacity:1; pointer-events:auto; }
@@ -167,7 +173,7 @@
   .value-card h3{ margin-top:16px; font-size:18.5px; font-weight:800; color:var(--ink); }
   .value-card p{ margin-top:8px; font-size:14.5px; line-height:1.65; color:var(--ink-soft); }
 
-  /* PRACTICE — accent-bar list */
+  /* PRACTICE - accent-bar list */
   .practice{ padding:100px 0; }
   .practice-head{ max-width:640px; margin-bottom:44px; }
   .practice-list{ display:flex; flex-direction:column; gap:2px; }
@@ -291,9 +297,9 @@
       <a class="icon-btn email-btn" href="mailto:yd@deri-law.com" onclick="return copyEmail(event, this)" data-email="yd@deri-law.com" aria-label="שלחו מייל">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4.5 6.5 7.5 6 7.5-6"/></svg>
       </a>
-      <a class="btn" style="padding:11px 22px; font-size:14px;" href="https://wa.me/972542015544" target="_blank" rel="noopener">
+      <a class="btn whatsapp-header-btn" style="padding:11px 22px; font-size:14px;" href="https://wa.me/972542015544" target="_blank" rel="noopener" aria-label="וואטסאפ">
         <svg class="icon" viewBox="0 0 24 24" fill="currentColor" style="width:17px;height:17px;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.82L2 22l5.44-1.42a9.87 9.87 0 0 0 4.6 1.14h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.19c-.24.68-1.19 1.25-1.95 1.41-.52.11-1.2.2-3.48-.75-2.92-1.21-4.8-4.17-4.95-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.11.99 2.05 1.3 2.34 1.44.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.64-.14.26.1 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
-        וואטסאפ
+        <span class="btn-label">וואטסאפ</span>
       </a>
       <button class="menu-toggle" id="menu-toggle" aria-label="תפריט">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -323,7 +329,7 @@
     <div>
       <span class="eyebrow"><span class="bar"></span>פלילי · נפגעי עבירה · רישוי נשק</span>
       <h1 data-reveal style="margin-top:20px;">הכרתי את המערכת מבפנים. היום אני <span>עובדת בשבילכם</span></h1>
-      <p class="hero-sub" data-reveal style="transition-delay:80ms">עורכת דין לדיני פלילים ונפגעי עבירה, עם עבר כקצינה וכתובעת במשטרת ישראל — ניסיון שהופך ליתרון אמיתי בתיק שלכם.</p>
+      <p class="hero-sub" data-reveal style="transition-delay:80ms">עורכת דין לדיני פלילים ונפגעי עבירה, עם עבר כקצינה וכתובעת במשטרת ישראל - ניסיון שהופך ליתרון אמיתי בתיק שלכם.</p>
       <div class="trust-strip" data-reveal style="transition-delay:110ms">
         <span class="trust-pill">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
@@ -369,12 +375,12 @@
       <h2 class="section-title" style="margin-top:16px;">ניסיון שנצבר<br>משני צדי החוק</h2>
     </div>
     <div class="about-copy" data-reveal style="transition-delay:100ms">
-      <p>אני עורכת דין המתמחה במשפט פלילי, ייצוג נפגעי עבירה, רישוי נשק והליכי משמעת ומח"ש מול שוטרים. הניסיון שלי נצבר לאורך 13 שנים כקצינה במשטרת ישראל, בתפקידים מגוונים — ובהם תפקידה כתובעת פלילית שטיפלה באלפי תיקים מורכבים.</p>
-      <p>ההיכרות המעמיקה עם דרכי העבודה של הרשויות, עם התהליכים החקירתיים והמשפטיים "מהצד השני", מעניקה למשרד יתרון אסטרטגי אמיתי — היכולת לצפות את מהלכי הרשות, להבין את שיקוליה, ולהוביל כל תיק בצורה מיטבית.</p>
+      <p>אני עורכת דין המתמחה במשפט פלילי, ייצוג נפגעי עבירה, רישוי נשק והליכי משמעת ומח"ש מול שוטרים. הניסיון שלי נצבר לאורך 13 שנים כקצינה במשטרת ישראל, בתפקידים מגוונים - ובהם תפקידה כתובעת פלילית שטיפלה באלפי תיקים מורכבים.</p>
+      <p>ההיכרות המעמיקה עם דרכי העבודה של הרשויות, עם התהליכים החקירתיים והמשפטיים "מהצד השני", מעניקה למשרד יתרון אסטרטגי אמיתי - היכולת לצפות את מהלכי הרשות, להבין את שיקוליה, ולהוביל כל תיק בצורה מיטבית.</p>
       <div class="stat-row">
         <div class="stat-card"><b>13+</b><span>שנות שירות במשטרת ישראל, בתפקידי חקירה ותביעה</span></div>
         <div class="stat-card"><b>אלפי</b><span>תיקים פליליים מורכבים שטופלו לאורך הדרך</span></div>
-        <div class="stat-card"><b>כלל</b><span>הערכאות — מחקירה ועד לערעור</span></div>
+        <div class="stat-card"><b>כלל</b><span>הערכאות - מחקירה ועד לערעור</span></div>
       </div>
     </div>
   </div>
@@ -386,7 +392,7 @@
     <div class="values-head" data-reveal>
       <span class="eyebrow"><span class="bar"></span>למה לבחור בי</span>
       <h2 class="section-title" style="margin-top:16px;">יתרון שנרכש בשטח, לא רק בספרים</h2>
-      <p class="section-lede" style="margin-top:16px;">שישה עקרונות שמנחים אותי בכל תיק — מהיום הראשון ועד לסיום ההליך.</p>
+      <p class="section-lede" style="margin-top:16px;">שישה עקרונות שמנחים אותי בכל תיק - מהיום הראשון ועד לסיום ההליך.</p>
     </div>
     <div class="value-grid" data-reveal>
       <div class="value-card"><span class="num">01</span><h3>ניסיון אמיתי בשטח</h3><p>למעלה מ־13 שנות ניסיון במשטרת ישראל וטיפול באלפי תיקים מורכבים.</p></div>
@@ -409,7 +415,7 @@
     <div class="practice-list" data-reveal>
       <a class="practice-row" href="#contact">
         <span class="icon-wrap"><svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M6 7h12M6.4 7 3 14.5a3.4 3.4 0 0 0 6.8 0L6.4 7Zm11.2 0L14.2 14.5a3.4 3.4 0 0 0 6.8 0L17.6 7Z"/></svg></span>
-        <div><h3>משפט פלילי</h3><p>ייצוג והגנה בכל שלבי ההליך הפלילי — מחקירה ועד למשפט.</p></div>
+        <div><h3>משפט פלילי</h3><p>ייצוג והגנה בכל שלבי ההליך הפלילי - מחקירה ועד למשפט.</p></div>
         <svg class="icon arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
       </a>
       <a class="practice-row" href="#contact">
@@ -534,7 +540,7 @@
     <div class="trust-inner" data-reveal>
       <h2>אמינות. ניסיון. מקצועיות.</h2>
       <div class="rule"></div>
-      <p class="small">ניהול הליך משפטי הוא משימה רגישה ומורכבת. אני לא מתפשרת על האיכות, ולא מתפשרת על השירות — בכל תיק, לאורך כל הדרך.</p>
+      <p class="small">ניהול הליך משפטי הוא משימה רגישה ומורכבת. אני לא מתפשרת על האיכות, ולא מתפשרת על השירות - בכל תיק, לאורך כל הדרך.</p>
     </div>
   </div>
 </section>
@@ -545,7 +551,7 @@
     <div class="contact-top" data-reveal>
       <span class="eyebrow"><span class="bar"></span>יצירת קשר</span>
       <h2 class="section-title" style="margin-top:16px;">מוזמנים לפנות אליי</h2>
-      <p>לתיאום שיחת ייעוץ ראשונית או לכל שאלה — אני זמינה עבורכם בטלפון, בוואטסאפ או במייל. הייעוץ הראשוני ללא עלות, וכל שיחה איתי חסויה לחלוטין.</p>
+      <p>לתיאום שיחת ייעוץ ראשונית או לכל שאלה - אני זמינה עבורכם בטלפון, בוואטסאפ או במייל. הייעוץ הראשוני ללא עלות, וכל שיחה איתי חסויה לחלוטין.</p>
     </div>
     <div class="contact-grid" data-reveal>
       <a class="contact-card" href="tel:054-2015544">
@@ -568,7 +574,7 @@
       </a>
     </div>
   </div>
-  <div id="email-toast" role="status" aria-live="polite">הכתובת הועתקה ללוח — yd@deri-law.com</div>
+  <div id="email-toast" role="status" aria-live="polite">הכתובת הועתקה ללוח - yd@deri-law.com</div>
 </section>
 
 <footer>
